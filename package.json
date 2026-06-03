@@ -1,0 +1,12 @@
+{
+  "name": "vibe-match",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && node index.js",
+    "dev": "concurrently \"cd backend && node index.js\" \"cd frontend && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

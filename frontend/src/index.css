@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream: #FDF8F4;
+  --cream-dark: #F5EDE4;
+  --rose: #C97B84;
+  --rose-light: #F2D9DC;
+  --rose-dark: #8B4A52;
+  --blush: #EEC8CC;
+  --text: #2C1810;
+  --text-muted: #8B6E65;
+  --border: rgba(180, 120, 110, 0.2);
+  --white: #FFFFFF;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 4px 24px rgba(180, 120, 110, 0.12);
+}
+
+body {
+  font-family: "Georgia", serif;
+  background: var(--cream);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  transition: all 0.2s;
+}
+
+button:active { transform: scale(0.97); }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  width: 100%;
+  background: var(--white);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--rose);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
