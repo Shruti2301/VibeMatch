@@ -41,7 +41,7 @@ cp backend/.env.example backend/.env
 
 Create a `vibes` table with columns: `id` (uuid), `name`, `description`, `interests`, `connection_type`, `profile_link`, `tags` (jsonb), `result` (jsonb), `created_at`.
 
-### 4. Run locally
+### 4. Run locally (in your system)
 
 **Option A — both servers:**
 
@@ -56,7 +56,7 @@ cd backend && npm start
 cd frontend && npm run dev
 ```
 
-Open http://localhost:5173
+Open http://localhost:5173 (your system)
 
 ## Tech stack
 
